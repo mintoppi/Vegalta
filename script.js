@@ -22,10 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Player Data ---
     const players = [
         {
+            name: "鎌田 大夢",
+            number: 10,
+            pos: "MF",
+            hp: 168,
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_10_face.jpg",
+            evolution: "Ace Number",
+            specs: "168cm / 60kg | 伊予市出身",
+            attacks: [
+                { name: "天才の閃き", cost: ["G", "C"], damage: "50", desc: "中盤の底から相手を揺さぶるパスを出す。" },
+                { name: "アクセル・ドリブル", cost: ["G", "G", "C"], damage: "90", desc: "一瞬の加速で相手を抜き去り、決定機を作る。" }
+            ],
+            footer: {
+                weakness: "Grass",
+                resistance: "Psychic",
+                retreat: 1
+            }
+        },
+        {
             name: "相良 竜之介",
             number: 14,
             pos: "MF",
-            hp: 140,
+            hp: 172,
             img: "assets/player_14_face.jpg",
             evolution: "Basic Player",
             specs: "172cm / 67kg | 佐賀県出身",
@@ -40,48 +58,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         {
-            name: "韓 浩康",
-            number: 3,
-            pos: "DF",
-            hp: 186,
-            img: "https://via.placeholder.com/300x400?text=Han+Ho-gang",
-            evolution: "Wall Material",
-            specs: "186cm / 80kg | 新規加入",
+            name: "荒木 駿太",
+            number: 47,
+            pos: "FW",
+            hp: 169,
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_47_face.jpg",
+            evolution: "Speed Star",
+            specs: "169cm / 64kg | 福岡県出身",
             attacks: [
-                { name: "エアリアル・ビースト", cost: ["B", "C"], damage: "60", desc: "圧倒的な高さで相手のハイボールを跳ね返す。" },
-                { name: "鉄壁の要塞", cost: ["B", "B", "C"], damage: "0", desc: "次の相手の番、この選手が受けるダメージは「-50」される。" }
+                { name: "裏への抜け出し", cost: ["F", "C"], damage: "60", desc: "ディフェンスラインの裏へ一気に走り抜ける。" },
+                { name: "アグレッシブ・プレス", cost: ["F", "F"], damage: "40+", desc: "前線からのプレスでボールを奪い、30ダメージ追加。" }
             ],
             footer: {
-                weakness: "Speed",
-                resistance: "Power",
-                retreat: 3
-            }
-        },
-        {
-            name: "中島 元彦",
-            number: 7,
-            pos: "MF",
-            hp: 170,
-            img: "https://via.placeholder.com/300x400?text=Motohiko+Nakajima",
-            evolution: "Ace Striker",
-            specs: "170cm / 67kg | 大阪府出身",
-            attacks: [
-                { name: "強烈なミドル", cost: ["C", "C"], damage: "70", desc: "エリア外から枠を捉える弾丸シュート。" },
-                { name: "ファンタジスタ", cost: ["G", "C"], damage: "50+", desc: "コインを1回投げオモテなら、30ダメージ追加。" }
-            ],
-            footer: {
-                weakness: "Muddy",
-                resistance: "Stone",
+                weakness: "Water",
+                resistance: "Fighting",
                 retreat: 1
             }
         }
     ];
 
     const matchResults = [
-        { date: "2025.11.29", opponent: "いわきFC", score: "0 - 1", result: "loss" },
-        { date: "2025.11.23", opponent: "ブラウブリッツ秋田", score: "0 - 0", result: "draw" },
-        { date: "2025.11.09", opponent: "ロアッソ熊本", score: "0 - 2", result: "loss" },
-        { date: "2025.11.02", opponent: "FC今治", score: "2 - 3", result: "loss" }
+        { date: "11.29 (SAT)", opponent: "いわきFC", score: "0 - 1", result: "loss" },
+        { date: "11.23 (SUN)", opponent: "ブラウブリッツ秋田", score: "0 - 0", result: "draw" },
+        { date: "11.09 (SUN)", opponent: "ロアッソ熊本", score: "2 - 0", result: "win" },
+        { date: "11.02 (SUN)", opponent: "FC今治", score: "2 - 3", result: "loss" },
+        { date: "10.26 (SUN)", opponent: "サガン鳥栖", score: "3 - 2", result: "win" }
     ];
 
     const newsData = [
@@ -139,10 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!container) return;
 
         container.innerHTML = matchResults.map(r => `
-            <div class="result-card animate-on-scroll">
+            <div class="result-card ${r.result} reveal">
                 <div class="result-date">${r.date}</div>
                 <div class="result-opponent">VS ${r.opponent}</div>
-                <div class="result-score ${r.result}">${r.score}</div>
+                <div class="result-score">${r.score}</div>
             </div>
         `).join('');
     }
@@ -152,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!container) return;
 
         container.innerHTML = newsData.map(n => `
-            <article class="news-card animate-on-scroll">
+            <article class="news-card reveal">
                 <div class="news-card-date">${n.date}</div>
                 <div class="news-card-content">${n.content}</div>
                 <a href="${n.link}" target="_blank" class="news-card-link">詳細はこちら ↗</a>
@@ -180,20 +181,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
         const countdownEl = document.getElementById('countdown');
         if (countdownEl) {
-            countdownEl.innerText = `${days}日 ${hours}時間 ${minutes}分`;
+            countdownEl.innerText = `${days}日 ${hours}時間 ${minutes}分 ${seconds}秒`;
         }
     }
 
-    setInterval(updateCountdown, 60000); // Update every minute
+    setInterval(updateCountdown, 1000); // Update every second
     updateCountdown(); // Initial call
 
-    // Re-observe dynamic elements
+    // Scroll Animation - Advanced Observer
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    // Observe all reveal elements
     setTimeout(() => {
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+            revealObserver.observe(el);
         });
     }, 100);
 });
