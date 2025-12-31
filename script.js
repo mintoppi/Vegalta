@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "空の支配者", cost: ["W", "C"], damage: "40", desc: "圧倒的な高さでクロスボールを完全にキャッチする。" },
                 { name: "至近距離セーブ", cost: ["W", "W", "C"], damage: "0", desc: "次の相手の番、攻撃によるダメージをすべて無効化する。" }
             ],
-            footer: { weakness: "Agility", resistance: "Power", retreat: 3 }
+            stats2024: { app: 37, min: 3330, goals: 0 },
+            personal: { artist: "Mr.Children", music: "終わりなき旅" }
         },
         {
             name: "髙田 椋汰",
@@ -47,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "サイドの制圧", cost: ["F", "C"], damage: "50", desc: "上下動を繰り返し、サイドの主導権を握る。" },
                 { name: "精密タックル", cost: ["F", "F"], damage: "70", desc: "正確なタイミングでボールを刈り取る。" }
             ],
-            footer: { weakness: "Water", resistance: "Fighting", retreat: 1 }
+            stats2024: { app: 27, min: 2216, goals: 2 },
+            personal: { artist: "石原さとみ (Fan)", music: "ドラマ主題歌" }
         },
         {
             name: "奥山 政幸",
@@ -61,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "危機察知", cost: ["C", "C"], damage: "30", desc: "相手の決定機を未然に防ぎ、混乱させる。" },
                 { name: "カバーリング", cost: ["C", "C", "C"], damage: "0", desc: "自分のベンチポケモンの受けるダメージを軽減する。" }
             ],
-            footer: { weakness: "Speed", resistance: "Grass", retreat: 2 }
+            stats2024: { app: 10, min: 795, goals: 0 },
+            personal: { artist: "Mr.Children", music: "シーソーゲーム" }
         },
         {
             name: "菅田 真啓",
@@ -75,7 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "高空ヘッド", cost: ["F", "C"], damage: "60", desc: "セットプレーから強烈なヘディングを見舞う。" },
                 { name: "最後の砦", cost: ["F", "F", "C"], damage: "110", desc: "捨て身のブロックでゴールを死守する。" }
             ],
-            footer: { weakness: "Psychic", resistance: "Fire", retreat: 2 }
+            stats2024: { app: 38, min: 3375, goals: 3 },
+            personal: { artist: "ONE OK ROCK", music: "Wasted Nights" }
         },
         {
             name: "武田 英寿",
@@ -89,7 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "左足の魔法", cost: ["G", "C"], damage: "60", desc: "魔法のような弾道でフリーキックを叩き込む。" },
                 { name: "ラストパス", cost: ["G", "G"], damage: "0", desc: "山札から好きなカードを1枚手札に加える。" }
             ],
-            footer: { weakness: "Dark", resistance: "Light", retreat: 1 }
+            stats2024: { app: 16, min: "N/A", goals: 3 },
+            personal: { artist: "SUPER BEAVER", music: "名前を呼ぶよ" }
         },
         {
             name: "鎌田 大夢",
@@ -103,7 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "天才の閃き", cost: ["G", "C"], damage: "50", desc: "中盤の底から相手を揺さぶるパスを出す。" },
                 { name: "アクセル・ドリブル", cost: ["G", "G", "C"], damage: "90", desc: "一瞬の加速で相手を抜き去り、決定機を作る。" }
             ],
-            footer: { weakness: "Grass", resistance: "Psychic", retreat: 1 }
+            stats2024: { app: 18, min: 1077, goals: 0 },
+            personal: { artist: "Vaundy", music: "怪獣の花唄" }
         },
         {
             name: "相良 竜之介",
@@ -117,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "精密なクロス", cost: ["G", "G"], damage: "40", desc: "正確無比なクロスで決定機を演出する。" },
                 { name: "ベガルタ・ゴールド", cost: ["G", "B", "C"], damage: "120", desc: "仙台の誇りを胸に、魂のシュートを放つ。" }
             ],
-            footer: { weakness: "Rain", resistance: "Wind", retreat: 2 }
+            stats2024: { app: 37, min: 2254, goals: 9 },
+            personal: { artist: "Mrs. GREEN APPLE", music: "ライラック" }
         },
         {
             name: "井上 詩音",
@@ -131,7 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "クリーンタックル", cost: ["F", "C"], damage: "50", desc: "汚れなき守備で相手からボールを奪い去る。" },
                 { name: "魂の鼓舞", cost: ["F", "C", "C"], damage: "0", desc: "味方の精神力を高め、次のダメージを＋30する。" }
             ],
-            footer: { weakness: "Ice", resistance: "Stone", retreat: 2 }
+            stats2024: { app: 2, min: 8, goals: 0 },
+            personal: { artist: "長瀬智也 (Fan)", music: "TOKIOソング" }
         },
         {
             name: "荒木 駿太",
@@ -145,7 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "裏への抜け出し", cost: ["Y", "C"], damage: "60", desc: "ディフェンスラインの裏へ一気に走り抜ける。" },
                 { name: "アグレッシブ・プレス", cost: ["Y", "Y"], damage: "40+", desc: "前線からのプレスでボールを奪い、30ダメージ追加。" }
             ],
-            footer: { weakness: "Water", resistance: "Fighting", retreat: 1 }
+            stats2024: { app: 23, min: 776, goals: 1 },
+            personal: { artist: "優里", music: "ドライフラワー" }
         },
         {
             name: "小林 心",
@@ -159,7 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "無我夢中", cost: ["Y", "C"], damage: "40", desc: "がむしゃらにゴールへ向かい、相手を困惑させる。" },
                 { name: "勝利への執念", cost: ["Y", "Y", "C"], damage: "100", desc: "逆境であればあるほど火力が上がる一撃。" }
             ],
-            footer: { weakness: "Steel", resistance: "Ghost", retreat: 1 }
+            stats2024: { app: 29, min: "N/A", goals: 8 },
+            personal: { artist: "King Gnu", music: "SPECIALZ" }
         },
         {
             name: "宮崎 鴻",
@@ -173,7 +183,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "パワーポスト", cost: ["C", "C"], damage: "50", desc: "巨大な体でボールを収め、タメを作る。" },
                 { name: "規格外のボレー", cost: ["Y", "C", "C"], damage: "130", desc: "空中で球を捉え、網を突き破る一撃。" }
             ],
-            footer: { weakness: "Fairy", resistance: "Normal", retreat: 3 }
+            stats2024: { app: 34, min: 2145, goals: 6 },
+            personal: { artist: "宇多田ヒカル", music: "One Last Kiss" }
         }
     ];
 

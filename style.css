@@ -652,26 +652,30 @@ footer {
   padding-left: 60px;
 }
 
-.card-footer {
+.card-footer-stats {
   border-top: 2px solid #dac452;
   margin-top: 5px;
-  padding-top: 5px;
+  padding: 8px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stat-line {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.6rem;
-  color: #444;
   font-weight: bold;
 }
 
-.bottom-stats {
-  display: flex;
-  gap: 15px;
+.stat-label {
+  color: #444;
 }
 
-.stat-box span {
-  display: block;
-  font-size: 0.5rem;
-  color: #777;
+.stat-value {
+  color: #000;
+  text-align: right;
 }
 
 /* Responsive */
