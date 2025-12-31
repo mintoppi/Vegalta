@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
+    const matchResults = [
+        { date: "2025.11.29", opponent: "いわきFC", score: "0 - 1", result: "loss" },
+        { date: "2025.11.23", opponent: "ブラウブリッツ秋田", score: "0 - 0", result: "draw" },
+        { date: "2025.11.09", opponent: "ロアッソ熊本", score: "0 - 2", result: "loss" },
+        { date: "2025.11.02", opponent: "FC今治", score: "2 - 3", result: "loss" }
+    ];
+
     function renderPlayers() {
         const container = document.getElementById('player-container');
         if (!container) return;
@@ -83,12 +90,24 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
+    function renderResults() {
+        const container = document.getElementById('results-container');
+        if (!container) return;
+
+        container.innerHTML = matchResults.map(r => `
+            <div class="result-card animate-on-scroll">
+                <div class="result-date">${r.date}</div>
+                <div class="result-opponent">VS ${r.opponent}</div>
+                <div class="result-score ${r.result}">${r.score}</div>
+            </div>
+        `).join('');
+    }
+
     renderPlayers();
+    renderResults();
 
     // Mock Countdown Timer (Next Match)
-    const matchDate = new Date();
-    matchDate.setDate(matchDate.getDate() + 5); // 5 days from now
-    matchDate.setHours(14, 0, 0, 0);
+    const matchDate = new Date("2026-02-22T14:00:00");
 
     function updateCountdown() {
         const now = new Date();

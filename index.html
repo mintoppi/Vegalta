@@ -15,10 +15,11 @@
         <div class="container">
             <a href="#" class="logo">VEGALTA<span>SENDAI</span></a>
             <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#matches">Matches</a>
-                <a href="#team">Squad</a>
+                <a href="#home">ホーム</a>
+                <a href="#news">ニュース</a>
+                <a href="#matches">試合日程</a>
+                <a href="#team">選手紹介</a>
+                <a href="#results">過去の結果</a>
             </nav>
         </div>
     </header>
@@ -30,26 +31,38 @@
         <div class="container">
             <h1 class="hero-title">VEGALTA GOLD<br>SPIRIT</h1>
             <p class="hero-tagline">仙台の誇りを胸に、共に戦おう</p>
-            <a href="#matches" class="btn">NEXT MATCH</a>
-            <a href="#team" class="btn btn-outline" style="margin-left: 20px;">MEET THE SQUAD</a>
+            <a href="#matches" class="btn">次回の試合情報</a>
+            <a href="#team" class="btn btn-outline" style="margin-left: 20px;">選手紹介を見る</a>
         </div>
     </section>
 
     <!-- Next Match Section -->
     <section id="matches">
         <div class="container">
-            <h2 class="section-title">NEXT BATTLE</h2>
+            <h2 class="section-title">次回の対戦</h2>
             <div class="match-card">
-                <div class="text-gold" style="margin-bottom: 20px; font-weight: bold; letter-spacing: 2px;">J.LEAGUE
-                    MATCHDAY 28</div>
+                <div class="text-gold" style="margin-bottom: 20px; font-weight: bold; letter-spacing: 2px;">2026
+                    明治安田J2リーグ 開幕戦</div>
                 <div class="match-info">
-                    <div class="team-name text-blue">VEGALTA SENDAI</div>
+                    <div class="team-name text-blue">ベガルタ仙台</div>
                     <div class="vs">VS</div>
-                    <div class="team-name">KASHIMA ANTLERS</div>
+                    <div class="team-name">COMING SOON</div>
                 </div>
-                <div class="location" style="margin-bottom: 30px; color: #aaa;">YURTEC STADIUM SENDAI | 14:00 KICKOFF
+                <div class="location" style="margin-bottom: 30px; color: #aaa;">ユアテックスタジアム仙台 | 2026.02.22 KICKOFF
                 </div>
                 <div id="countdown" style="font-size: 1.5rem; font-weight: 700; color: #fff;"></div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Match Results Section -->
+    <section id="results" style="background: #050505;">
+        <div class="container">
+            <h2 class="section-title">過去の試合結果</h2>
+            <div id="results-container" class="results-grid">
+                <!-- JS Dynamic Content -->
             </div>
         </div>
     </section>
@@ -57,40 +70,29 @@
     <!-- News Section Mockup -->
     <section id="news" style="background: #0a0a0a;">
         <div class="container">
-            <h2 class="section-title">LATEST NEWS</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <!-- News Card 1 -->
-                <article style="background: #1a1a1a; border-radius: 8px; overflow: hidden; transition: transform 0.3s;"
-                    onmouseover="this.style.transform='translateY(-5px)'"
-                    onmouseout="this.style.transform='translateY(0)'">
-                    <div style="height: 200px; background: #333;"></div>
-                    <div style="padding: 20px;">
-                        <span class="text-gold" style="font-size: 0.9rem; font-weight: bold;">2025.12.30</span>
-                        <h3 style="margin: 10px 0;">新シーズンのユニフォームデザイン決定のお知らせ</h3>
-                        <p style="color: #aaa; font-size: 0.9rem;">2026シーズンの新ユニフォームが...</p>
+            <h2 class="section-title">最新ニュース</h2>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 800px; margin: 0 auto;">
+                <!-- Latest Tweet Style News -->
+                <article
+                    style="background: #1a1a1a; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); overflow: hidden; position: relative; padding: 30px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div
+                            style="width: 50px; height: 50px; background: #333; border-radius: 50%; margin-right: 15px;">
+                        </div>
+                        <div>
+                            <div style="font-weight: bold; color: #fff;">ベガルタ仙台公式 (@vega_official_)</div>
+                            <div style="font-size: 0.8rem; color: #888;">2025年12月30日</div>
+                        </div>
                     </div>
-                </article>
-                <!-- News Card 2 -->
-                <article style="background: #1a1a1a; border-radius: 8px; overflow: hidden; transition: transform 0.3s;"
-                    onmouseover="this.style.transform='translateY(-5px)'"
-                    onmouseout="this.style.transform='translateY(0)'">
-                    <div style="height: 200px; background: #333;"></div>
-                    <div style="padding: 20px;">
-                        <span class="text-gold" style="font-size: 0.9rem; font-weight: bold;">2025.12.28</span>
-                        <h3 style="margin: 10px 0;">ファン感謝デー開催について</h3>
-                        <p style="color: #aaa; font-size: 0.9rem;">今シーズンの感謝を込めて...</p>
+                    <div style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; color: #eee;">
+                        石尾陸登選手がジェフユナイテッド千葉へ完全移籍することとなりました。<br>
+                        「ベガルタ仙台を離れるのは寂しいですが、J1でプレーするチャンスを掴むために挑戦を決めました」<br>
+                        石尾選手のこれまでの貢献に感謝し、新天地での活躍を応援しています。
                     </div>
-                </article>
-                <!-- News Card 3 -->
-                <article style="background: #1a1a1a; border-radius: 8px; overflow: hidden; transition: transform 0.3s;"
-                    onmouseover="this.style.transform='translateY(-5px)'"
-                    onmouseout="this.style.transform='translateY(0)'">
-                    <div style="height: 200px; background: #333;"></div>
-                    <div style="padding: 20px;">
-                        <span class="text-gold" style="font-size: 0.9rem; font-weight: bold;">2025.12.25</span>
-                        <h3 style="margin: 10px 0;">年末年始の休業のお知らせ</h3>
-                        <p style="color: #aaa; font-size: 0.9rem;">誠に勝手ながら...</p>
-                    </div>
+                    <a href="https://x.com/vega_official_" target="_blank"
+                        style="color: #1da1f2; font-weight: bold; display: inline-flex; align-items: center;">
+                        Xで最新情報をチェック <span style="margin-left: 8px;">↗</span>
+                    </a>
                 </article>
             </div>
         </div>
@@ -99,7 +101,7 @@
     <!-- Player Showcase section -->
     <section id="team" style="background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);">
         <div class="container">
-            <h2 class="section-title">MEET THE SQUAD</h2>
+            <h2 class="section-title">選手紹介</h2>
             <div id="player-container" class="player-grid">
                 <!-- JS Dynamic Content (Pokemon Card Style) -->
             </div>
