@@ -38,6 +38,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 resistance: "Wind",
                 retreat: 2
             }
+        },
+        {
+            name: "韓 浩康",
+            number: 3,
+            pos: "DF",
+            hp: 186,
+            img: "https://via.placeholder.com/300x400?text=Han+Ho-gang",
+            evolution: "Wall Material",
+            specs: "186cm / 80kg | 新規加入",
+            attacks: [
+                { name: "エアリアル・ビースト", cost: ["B", "C"], damage: "60", desc: "圧倒的な高さで相手のハイボールを跳ね返す。" },
+                { name: "鉄壁の要塞", cost: ["B", "B", "C"], damage: "0", desc: "次の相手の番、この選手が受けるダメージは「-50」される。" }
+            ],
+            footer: {
+                weakness: "Speed",
+                resistance: "Power",
+                retreat: 3
+            }
+        },
+        {
+            name: "中島 元彦",
+            number: 7,
+            pos: "MF",
+            hp: 170,
+            img: "https://via.placeholder.com/300x400?text=Motohiko+Nakajima",
+            evolution: "Ace Striker",
+            specs: "170cm / 67kg | 大阪府出身",
+            attacks: [
+                { name: "強烈なミドル", cost: ["C", "C"], damage: "70", desc: "エリア外から枠を捉える弾丸シュート。" },
+                { name: "ファンタジスタ", cost: ["G", "C"], damage: "50+", desc: "コインを1回投げオモテなら、30ダメージ追加。" }
+            ],
+            footer: {
+                weakness: "Muddy",
+                resistance: "Stone",
+                retreat: 1
+            }
         }
     ];
 
@@ -46,6 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { date: "2025.11.23", opponent: "ブラウブリッツ秋田", score: "0 - 0", result: "draw" },
         { date: "2025.11.09", opponent: "ロアッソ熊本", score: "0 - 2", result: "loss" },
         { date: "2025.11.02", opponent: "FC今治", score: "2 - 3", result: "loss" }
+    ];
+
+    const newsData = [
+        { date: "2025.12.30", content: "石尾 陸登選手 ジェフユナイテッド千葉へ完全移籍のお知らせ", link: "https://x.com/vega_official_" },
+        { date: "2025.12.30", content: "VEGALTA CHANNEL 広報カメラ2025 総集編[前半戦]を公開しました", link: "https://x.com/vega_official_" },
+        { date: "2025.12.30", content: "「MIFA Football Park 仙台 × ベガルタ仙台 フットサルCUP」開催告知", link: "https://x.com/vega_official_" },
+        { date: "2025.12.29", content: "マテウス モラエス選手 契約更新のお知らせ", link: "https://x.com/vega_official_" },
+        { date: "2025.12.26", content: "相良 竜之介選手 契約更新のお知らせ", link: "https://x.com/vega_official_" }
     ];
 
     function renderPlayers() {
@@ -60,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="card-hp"><span class="hp-label">HP</span>${p.hp}</div>
                 </div>
                 <div class="card-image-frame">
-                    <img src="${p.img}" alt="${p.name}" class="card-img" onerror="this.src='/api/placeholder/400/320'">
+                    <img src="${p.img}" alt="${p.name}" class="card-img" onerror="this.src='https://via.placeholder.com/300x400?text=No+Image'">
                 </div>
                 <div class="card-specs">
                     ${p.specs}
@@ -103,11 +147,25 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
+    function renderNews() {
+        const container = document.getElementById('news-container');
+        if (!container) return;
+
+        container.innerHTML = newsData.map(n => `
+            <article class="news-card animate-on-scroll">
+                <div class="news-card-date">${n.date}</div>
+                <div class="news-card-content">${n.content}</div>
+                <a href="${n.link}" target="_blank" class="news-card-link">詳細はこちら ↗</a>
+            </article>
+        `).join('');
+    }
+
     renderPlayers();
     renderResults();
+    renderNews();
 
     // Mock Countdown Timer (Next Match)
-    const matchDate = new Date("2026-02-22T14:00:00");
+    const matchDate = new Date("2026-02-07T14:00:00");
 
     function updateCountdown() {
         const now = new Date();
@@ -125,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const countdownEl = document.getElementById('countdown');
         if (countdownEl) {
-            countdownEl.innerText = `${days}D ${hours}H ${minutes}M TO KICKOFF`;
+            countdownEl.innerText = `${days}日 ${hours}時間 ${minutes}分`;
         }
     }
 
