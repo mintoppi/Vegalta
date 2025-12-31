@@ -235,12 +235,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="attack-desc">${a.desc}</p>
                     `).join('')}
                 </div>
-                <div class="card-footer">
-                    <div class="bottom-stats">
-                        <div class="stat-box"><span>Weak</span> ${p.footer.weakness}</div>
-                        <div class="stat-box"><span>Resist</span> ${p.footer.resistance}</div>
+                <div class="card-footer-stats">
+                    <div class="stat-line">
+                        <span class="stat-label">2024統計:</span>
+                        <span class="stat-value">出場 ${p.stats2024.app} / ${p.stats2024.min}分 / ${p.stats2024.goals}G</span>
                     </div>
-                    <div class="retreat-info">Retreat: ${p.footer.retreat}</div>
+                    <div class="stat-line">
+                        <span class="stat-label">Favorite:</span>
+                        <span class="stat-value">${p.personal.artist} - ${p.personal.music}</span>
+                    </div>
                 </div>
             </div>
         `).join('');
