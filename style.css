@@ -504,6 +504,46 @@ footer {
   color: #333;
 }
 
+/* Status Labels */
+.card-status-label {
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  padding: 5px 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transform: rotate(15deg);
+  z-index: 20;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.status-stay {
+  background: #39e75f;
+  color: #000;
+}
+
+.status-transfer {
+  background: #ff4444;
+  color: #fff;
+}
+
+.status-expired {
+  background: #888;
+  color: #fff;
+}
+
+/* Grayscale for leaving players */
+.pokemon-card.leaving {
+  filter: grayscale(0.8) brightness(0.8);
+}
+
+.pokemon-card.leaving:hover {
+  filter: grayscale(0.3) brightness(1.0);
+}
+
 .pokemon-card:hover {
   transform: rotate3d(0.2, 0.5, 0, 15deg) translateY(-20px);
   box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.6);
@@ -550,6 +590,18 @@ footer {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.card-rating {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
 .card-hp {
   font-size: 1.6rem;
   font-weight: 900;
@@ -557,6 +609,98 @@ footer {
   display: flex;
   align-items: baseline;
   font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Rare Card Sparkly Effect */
+.rare-card {
+  background: linear-gradient(135deg, #ff00cc, #3333ff, #00d4ff, #3333ff, #ff00cc);
+  background-size: 400% 400%;
+  animation: rareGradient 10s ease infinite;
+  border: 2px solid #fff;
+  box-shadow: 0 0 30px rgba(255, 0, 204, 0.4), 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+
+.rare-card::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00d4ff, #ff00cc);
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 20px;
+}
+
+.rare-card:hover::after {
+  opacity: 0.6;
+}
+
+/* Holographic Sheen for Rare */
+.rare-card::before {
+  background: linear-gradient(125deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0.6) 100%);
+  background-size: 200% 200%;
+  animation: holoSheen 3s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes rareGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes holoSheen {
+  0% {
+    background-position: 200% 0%;
+  }
+
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+/* Click Animation */
+.card-pressed {
+  transform: scale(0.95) !important;
+  transition: transform 0.1s ease;
+}
+
+.sparkle-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100;
+  box-shadow: 0 0 10px #fff, 0 0 20px var(--vegalta-gold);
+  animation: sparkleAnim 1s ease-out forwards;
+}
+
+@keyframes sparkleAnim {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
 }
 
 .hp-label {
