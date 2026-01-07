@@ -881,6 +881,16 @@ footer {
     transform: translateY(-5px) !important;
   }
 
+  /* Disable Reveal Animations on Mobile to ensure visibility */
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    visibility: visible !important;
+  }
+
   /* Result Cards */
   .results-grid {
     padding: 0 10px;
