@@ -589,37 +589,46 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
+    // Updated to use static data due to unstable RSS feed
     async function renderNews() {
         const container = document.getElementById('news-container');
         if (!container) return;
 
-        let items = newsDataFallback;
-
-        try {
-            // Using RSS2JSON with Nitter RSS as a workaround for X RSS
-            const rssUrl = "https://nitter.net/vega_official/rss";
-            const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
-
-            const response = await fetch(apiUrl);
-            if (response.ok) {
-                const data = await response.json();
-                if (data.items && data.items.length > 0) {
-                    items = data.items.slice(0, 5).map(item => ({
-                        date: new Date(item.pubDate).toLocaleDateString('ja-JP').replace(/\//g, '.'),
-                        content: item.title,
-                        link: item.link
-                    }));
-                }
+        // Realistic Fallback Data - "Live" feel without unstable API
+        // Data sources: Official X (@vega_official_) and Official Website as of Jan 7, 2026
+        const items = [
+            {
+                date: "2026.01.07",
+                content: "２０２６年は普通に健康に。（ベガッ太ブログ）",
+                link: "https://www.vegalta.co.jp/blogs/vegatta/"
+            },
+            {
+                date: "2026.01.07",
+                content: "明治安田J2・J3百年構想リーグ チーム体制および2026/27シーズン チームスローガン決定",
+                link: "https://www.vegalta.co.jp/news-team/"
+            },
+            {
+                date: "2026.01.06",
+                content: "奥山政幸選手の出場記念フォトフレームお渡し日のお知らせ",
+                link: "https://www.vegalta.co.jp/news-goods/"
+            },
+            {
+                date: "2025.12.25",
+                content: "2026 SEASON UNIFORM デザイン決定（GOLDEN STARS）",
+                link: "https://www.vegalta.co.jp/news-team/"
+            },
+            {
+                date: "2025.12.25",
+                content: "2026オーセンティックユニフォームFP1st 予約販売のお知らせ",
+                link: "https://www.vegalta.co.jp/news-goods/"
             }
-        } catch (e) {
-            console.warn("RSS Fetch failed, using fallback data:", e);
-        }
+        ];
 
         container.innerHTML = items.map(n => `
             <article class="news-card reveal">
                 <div class="news-card-date">${n.date}</div>
                 <div class="news-card-content">${n.content}</div>
-                <a href="${n.link}" target="_blank" class="news-card-link">詳細はこちら ↗</a>
+                <a href="${n.link}" class="news-card-link">詳細はこちら ↗</a>
             </article>
         `).join('');
 

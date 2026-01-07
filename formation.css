@@ -309,8 +309,25 @@
 }
 
 @media (max-width: 600px) {
+    .formation-container {
+        margin-top: 170px;
+        /* Clear fixed header */
+    }
+
     .player-slot {
-        width: 80px;
+        width: 70px;
+        /* Prevent overlap */
+    }
+
+    .player-slot:hover {
+        z-index: 100;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .card-header-small {
+        font-size: 10px;
+        /* Better fit for long names */
+        padding: 1px 3px;
     }
 
     .page-title {
