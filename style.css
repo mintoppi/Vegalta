@@ -798,83 +798,118 @@ footer {
 
 .card-footer-stats {
   border-top: 2px solid #dac452;
-  margin-top: 5px;
-  padding: 8px 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+  margin-top: 10px;
+  padding-top: 8px;
 }
 
 .stat-line {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 0.6rem;
-  font-weight: bold;
+  font-size: 0.65rem;
+  margin-bottom: 2px;
+  color: #333;
 }
 
 .stat-label {
-  color: #444;
+  font-weight: bold;
 }
 
 .stat-value {
-  color: #000;
-  text-align: right;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
+
+  /* Typography Adjustments */
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Header Navigation */
+  .main-header {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .main-header .container {
+    flex-direction: column;
+    gap: 15px;
   }
 
   .nav-links {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  /* Hero Section */
+  .match-card {
+    padding: 20px;
   }
 
   .match-info {
     flex-direction: column;
-    gap: 15px;
-    font-size: 1.5rem;
+    gap: 10px;
   }
 
-  /* Results Grid Mobile */
-  .result-card {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 15px;
-    padding: 20px;
+  .vs {
+    margin: 10px 0;
   }
 
-  .result-opponent,
-  .result-score {
-    text-align: center;
-  }
-
-  .result-score {
-    font-size: 1.6rem;
-  }
-
-  /* Pokemon Card Mobile */
+  /* Player Cards */
   .pokemon-card {
     width: 100%;
     max-width: 320px;
+    /* Fit within small screens */
     margin: 0 auto;
+    transform: none !important;
+    /* Disable 3D tilt on mobile for better usability */
   }
 
-  .card-img {
-    height: 180px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.2rem;
+  .pokemon-card:hover {
+    transform: translateY(-5px) !important;
   }
 
-  .btn {
-    width: 100%;
-    margin-left: 0 !important;
-    margin-top: 10px;
+  /* Result Cards */
+  .results-grid {
+    padding: 0 10px;
+  }
+
+  .result-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .result-opponent {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .result-score {
+    text-align: center;
+  }
+
+  .result-date {
+    margin-bottom: 5px;
+  }
+
+  /* News List */
+  .news-card {
+    flex: 0 0 260px;
+    /* Slightly smaller cards */
   }
 }

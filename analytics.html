@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Analytics | VEGALTA SENDAI FAN SITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="analytics-page">
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">VEGALTA<span>SENDAI</span></a>
+            <nav class="nav-links">
+                <a href="index.html#home">ホーム</a>
+                <a href="index.html#news">ニュース</a>
+                <a href="index.html#matches">試合日程</a>
+                <a href="index.html#results">戦績</a>
+                <a href="index.html#team">注目選手</a>
+                <a href="analytics.html" class="active-gold">チーム分析</a>
+                <a href="formation.html">フォーメーション</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="analytics-container">
+        <header class="analytics-header reveal">
+            <h1 class="analytics-title">TEAM ANALYTICS</h1>
+            <p class="analytics-subtitle">2025 SEASON PERFORMANCE METRICS</p>
+        </header>
+
+        <!-- チーム統計サマリー -->
+        <section class="team-stats-summary reveal">
+            <h2 class="section-title">チーム統計サマリー</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">38</div>
+                    <div class="stat-label">試合数</div>
+                </div>
+                <div class="stat-box win">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">勝利</div>
+                </div>
+                <div class="stat-box draw">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">引き分け</div>
+                </div>
+                <div class="stat-box loss">
+                    <div class="stat-number">13</div>
+                    <div class="stat-label">敗北</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">54</div>
+                    <div class="stat-label">得点</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">失点</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">47.4%</div>
+                    <div class="stat-label">勝率</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">+12</div>
+                    <div class="stat-label">得失点差</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 選手ランキング -->
+        <section class="player-rankings reveal">
+            <h2 class="section-title">選手ランキング</h2>
+            <div class="ranking-grid">
+                <div class="ranking-card">
+                    <h3 class="ranking-title">得点王</h3>
+                    <div id="top-scorers" class="ranking-list">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+                <div class="ranking-card">
+                    <h3 class="ranking-title">アシスト王</h3>
+                    <div id="top-assists" class="ranking-list">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+                <div class="ranking-card">
+                    <h3 class="ranking-title">出場時間</h3>
+                    <div id="top-minutes" class="ranking-list">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 月別パフォーマンス -->
+        <section class="monthly-performance reveal">
+            <h2 class="section-title">月別パフォーマンス</h2>
+            <div class="monthly-grid" id="monthly-grid">
+                <!-- Dynamic content -->
+            </div>
+        </section>
+
+        <!-- 最近の試合結果 -->
+        <section class="recent-matches reveal">
+            <h2 class="section-title">最近の試合結果</h2>
+            <div id="recent-results" class="results-container">
+                <!-- Dynamic content -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 VEGALTA SENDAI UNOFFICIAL FAN SITE</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="analytics.js"></script>
+</body>
+
+</html>
