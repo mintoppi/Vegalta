@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "GK",
             status: "更新・残留",
             hp: 180,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_01_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_01_face.jpg",
             evolution: "Steady Guardian",
             specs: "183cm / 80kg | 大阪府出身",
             attacks: [
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "GK",
             status: "→→→ 琉球",
             hp: 185,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_21_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_21_face.jpg",
             evolution: "Rising Keeper",
             specs: "187cm / 84kg | 大阪府出身",
             attacks: [
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "GK",
             status: "更新・残留",
             hp: 182,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_29_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_29_face.jpg",
             evolution: "Resilient Spirit",
             specs: "182cm / 82kg | 神奈川県出身",
             attacks: [
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "GK",
             status: "更新・残留",
             hp: 195,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_33_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_33_face.jpg",
             evolution: "Guardian Boss",
             specs: "195cm / 92kg | 東京都出身",
             attacks: [
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "更新・残留",
             hp: 174,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_02_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_02_face.jpg",
             evolution: "Iron Wing",
             specs: "174cm / 72kg | 宮崎県出身",
             attacks: [
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "更新・残留",
             hp: 173,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_03_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_03_face.jpg",
             evolution: "Standard Wall",
             specs: "173cm / 70kg | 愛知県出身",
             attacks: [
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "更新・残留",
             hp: 183,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_05_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_05_face.jpg",
             evolution: "Air Raid",
             specs: "183cm / 77kg | 奈良県出身",
             attacks: [
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "更新・残留",
             hp: 188,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_19_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_19_face.jpg",
             evolution: "Great Wall",
             specs: "188cm / 80kg | ブラジル出身",
             attacks: [
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "→→→ 水戸",
             hp: 175,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_25_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_25_face.jpg",
             evolution: "Swift Fullback",
             specs: "175cm / 70kg | 三重県出身",
             attacks: [
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "→→→ 千葉",
             hp: 182,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_39_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_39_face.jpg",
             evolution: "Young Shield",
             specs: "182cm / 75kg | 東京都出身",
             attacks: [
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "更新・残留",
             hp: 173,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_42_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_42_face.jpg",
             evolution: "Technical Wing",
             specs: "173cm / 68kg | 東京都出身",
             attacks: [
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "DF",
             status: "更新・残留",
             hp: 184,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_44_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_44_face.jpg",
             evolution: "Rising Shield",
             specs: "184cm / 77kg | 宮城県出身",
             attacks: [
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 175,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_04_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_04_face.jpg",
             evolution: "Engine Room",
             specs: "175cm / 70kg | 神奈川県出身",
             attacks: [
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 178,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_06_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_06_face.jpg",
             evolution: "Shadow Anchor",
             specs: "178cm / 73kg | 福島県出身",
             attacks: [
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 178,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_08_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_08_face.jpg",
             evolution: "Free Kick Master",
             specs: "178cm / 68kg | 宮城県出身",
             attacks: [
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 168,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_10_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_10_face.jpg",
             evolution: "Ace Number",
             specs: "168cm / 60kg | 伊予市出身",
             attacks: [
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "→→→ 神戸",
             hp: 183,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_11_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_11_face.jpg",
             evolution: "Versatile Midfielder",
             specs: "183cm / 74kg | 宮城県出身",
             attacks: [
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 172,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_14_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_14_face.jpg",
             evolution: "Golden Crosser",
             specs: "172cm / 67kg | 佐賀県出身",
             attacks: [
@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 170,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_15_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_15_face.jpg",
             evolution: "Speedy Creator",
             specs: "170cm / 64kg | 兵庫県出身",
             attacks: [
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 174,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_17_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_17_face.jpg",
             evolution: "Field General",
             specs: "174cm / 70kg | 神奈川県出身",
             attacks: [
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 172,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_23_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_23_face.jpg",
             evolution: "Agile Winger",
             specs: "172cm / 65kg | 新潟県出身",
             attacks: [
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "更新・残留",
             hp: 176,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_26_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_26_face.jpg",
             evolution: "Next Gen Talent",
             specs: "176cm / 68kg | 東京都出身",
             attacks: [
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "MF",
             status: "→→→ 川崎",
             hp: 170,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_32_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_32_face.jpg",
             evolution: "Technical Maestro",
             specs: "170cm / 65kg | 神奈川県出身",
             attacks: [
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "FW",
             status: "非更新",
             hp: 190,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_09_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_09_face.jpg",
             evolution: "Heavy Striker",
             specs: "190cm / 88kg | ブラジル出身",
             attacks: [
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "FW",
             status: "→→→ ボタフォゴPB",
             hp: 185,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_20_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_20_face.jpg",
             evolution: "Aerial Threat",
             specs: "185cm / 78kg | ブラジル出身",
             attacks: [
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "FW",
             status: "更新・残留",
             hp: 178,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_40_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_40_face.jpg",
             evolution: "Goal Sniffer",
             specs: "178cm / 72kg | 東京都出身",
             attacks: [
@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "FW",
             status: "更新・残留",
             hp: 169,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_47_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_47_face.jpg",
             evolution: "Speed Star",
             specs: "169cm / 64kg | 福岡県出身",
             attacks: [
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "FW",
             status: "更新・残留",
             hp: 177,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_59_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_59_face.jpg",
             evolution: "Heart Breaker",
             specs: "177cm / 73kg | 新潟市出身",
             attacks: [
@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pos: "FW",
             status: "更新・残留",
             hp: 184,
-            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2025_99_face.jpg",
+            img: "https://www.vegalta.co.jp/wpsys/wp-content/themes/vegalta_2019/img/top-player/player2026_99_face.jpg",
             evolution: "Gigantic Ace",
             specs: "184cm / 82kg | 東京都出身",
             attacks: [
